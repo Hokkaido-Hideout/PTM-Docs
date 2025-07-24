@@ -1,0 +1,22 @@
+[
+  {
+    "id": "features",
+    "title": "✨ Features",
+    "body": "🔁 Copy properties from one Blueprint to another 📌 Preserve variable values, including arrays and structs 🚫 Clash detection for conflicting names or types 📚 Supports macros and function graphs 🎨 UI-based selection with color-coded type indicators 🔍 Filter and inspect Blueprint properties easily 📁 Transfer variables to and from User Defined Structs"
+  },
+  {
+    "id": "getting-started",
+    "title": "🚀 Getting Started",
+    "body": "🧩 Installation Place the PTMTool plugin folder inside your project’s Plugins/ directory. Regenerate project files and recompile (for C++ projects). Launch the Unreal Editor. Open Window > PTMTool to access the tool. Compatible with Unreal Engine 4.XX and potentially UE5 with minor adjustments . Compatible with Unreal Engine 4.XX and potentially UE5 with minor adjustments ."
+  },
+  {
+    "id": "how-to-use",
+    "title": "🖥️ How to Use",
+    "body": "Open the Property Transfer Manager window from the Unreal Editor. Select your Source and Target Blueprints. Use the property/function picker to select which elements to transfer. Press Apply to complete the transfer. ✅ Supported Types bool , int , byte , float FName , FText , FString FVector , FRotator , FTransform , FColor TArray<T> , TMap<T> , TSet<T> , for all of the above types Object Reference types ⚠️ Clash Detection Red highlighting indicates name/type mismatches between Source and Target. These fields will not be copied unless resolved."
+  },
+  {
+    "id": "api-overview-developers",
+    "title": "🧬 API Overview (Developers)",
+    "body": "Header: PTMTool.h Core Classes FPTM_PropertyInfo FFTM_FunctionInfo FPropertyTransferManager Key Methods ```cpp\n// Blueprint Selection\nUObject* GetSelectedBlueprint();\nUBlueprint* GetBlueprintFromObject(UObject*); // Property Transfer\nTArray CollectBlueprintPropertyInfo(UObject ); // works with UUserDefinedStruct\nbool CopyBlueprintProperty(UObject Source, UObject* Target, const FName &Variable); // Blueprint or struct // Function/Macro Transfer\nTArray CollectBlueprintFunctionInfo(UObject );\nbool CopyBlueprintFunction(UObject Source, UObject* Target, const FName &Function);"
+  }
+]
