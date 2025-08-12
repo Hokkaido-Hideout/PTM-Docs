@@ -25,11 +25,17 @@ A powerful and intuitive **Unreal Editor plugin** that enables fast and reliable
 1. Place the `PTMTool` plugin folder inside your project’s `Plugins/` directory.
 2. Regenerate project files and recompile (for C++ projects).
 3. Launch the Unreal Editor.
-4. Open **Window > PTMTool** to access the tool.
+4. Focus the Editor on the Map Editor window (not Blueprint windows).
+54. Open `Tools > Property Copy...` or `Tools > Function Copy...` to access the tool.
 
 > Compatible with **Unreal Engine 4.XX** and potentially **UE5 with minor adjustments**.
 
+
+![Menu](https://www.dropbox.com/scl/fi/vknzi9nzz8smyeb1o0ye0/PTT_Menu.png?rlkey=d7sfxu55afj8esdcggdyotr01&st=ohfsy26s&raw=1)
+
+
 ---
+
 
 ## 🖥️ How to Use
 
